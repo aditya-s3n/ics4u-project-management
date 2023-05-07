@@ -10,23 +10,23 @@ function App() {
       <div className="container text-center my-2">
         <div className="row">
           <div className="col">
-            <SetHome />
+            <SetHome setNumber={1} theme={"Objects"} />
           </div>
           <div className="col">
-            <SetHome />
+          <SetHome setNumber={2} theme={"Objects"} />
           </div>
         </div>
 
         <div className="row">
           <div className="col">
-            <SetHome />
+            <SetHome setNumber={3} theme={"Objects"} />
           </div>
           <div className="col">
-            <SetHome />
+            <SetHome setNumber={4} theme={"Objects"} />
           </div>
         </div>
       </div>
-      
+    
     </div>
   );
 }

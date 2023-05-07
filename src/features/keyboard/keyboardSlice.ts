@@ -7,7 +7,7 @@ const keyboardSlice = createSlice({
     },
     reducers: {
         changeKey: (state, newKey) => {
-        state.key = newKey.payload
+            state.key = newKey.payload
         }
     }
 })
