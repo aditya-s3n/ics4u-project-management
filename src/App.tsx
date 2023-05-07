@@ -1,13 +1,67 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import SetHome from './components/SetHome/SetHome';
 
 function App() {
-  return (
-    <div className="App">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
+  const pathname = window.location.pathname;
+  const setBoolean = pathname.substring(0, 4) === "/set";
+  const setQuestion = pathname.substring(5, 6);
+  
+  const setQuestionValidity = setQuestion === "1" || setQuestion === "2" || setQuestion === "3" || setQuestion === "4"
+
+  if (setBoolean) {
+    if (setQuestionValidity) {
       
-    </div>
-  );
+      return (
+        <div className='App'>
+          <Navbar />
+          
+          SET QUESTIONS
+        </div>
+      );
+      
+    } else {
+      
+      return (
+        <div className="App">
+          <Navbar />
+    
+          <div className="container text-center my-2">
+            <div className="row">
+              <div className="col">
+                <SetHome setNumber={1} theme={"Objects"} />
+              </div>
+              <div className="col">
+              <SetHome setNumber={2} theme={"Objects"} />
+              </div>
+            </div>
+    
+            <div className="row">
+              <div className="col">
+                <SetHome setNumber={3} theme={"Objects"} />
+              </div>
+              <div className="col">
+                <SetHome setNumber={4} theme={"Objects"} />
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      );
+
+    }
+    
+  } else {
+
+    return (
+      <div>
+        HOME
+      </div>
+    );
+
+  }
+  
 }
 
 export default App;
