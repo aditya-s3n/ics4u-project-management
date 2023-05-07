@@ -18,14 +18,16 @@ function Navbar() {
                             <a className="nav-link active" aria-current="page" href="/">Info / Rules</a>
                         </li>
                         
-                        <li className="nav-item dropdown mx-2">
-                        <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Link
+                        <li className="nav-item dropdown mx-5">
+                        <a className="nav-link active dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sets
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/">Action</a></li>
-                            <li><a className="dropdown-item" href="/">Another action</a></li>
-                            <li><a className="dropdown-item" href="/">Something else here</a></li>
+                            <li><a className="dropdown-item" href="/set">Set Home</a></li>
+                            <li><a className="dropdown-item" href="/set/1">Set 1</a></li>
+                            <li><a className="dropdown-item" href="/set/2">Set 2</a></li>
+                            <li><a className="dropdown-item" href="/set/3">Set 3</a></li>
+                            <li><a className="dropdown-item" href="/set/4">Set 4</a></li>
                         </ul>
                         </li>
 
