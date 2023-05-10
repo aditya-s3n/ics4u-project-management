@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import SetHome from './components/SetHome/SetHome';
+import Home from './components/Home/Home';
 import SetQuestion from './components/SetQuestion/SetQuestion';
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
 
     return (
       <div>
-        HOME
+        <Home />
       </div>
     );
 
