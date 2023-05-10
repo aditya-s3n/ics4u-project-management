@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import SetHome from './components/SetHome/SetHome';
+import Home from './components/Home/Home';
 
 function App() {
   const pathname = window.location.pathname;
@@ -56,7 +57,7 @@ function App() {
 
     return (
       <div>
-        HOME
+        <Home />
       </div>
     );
 
