@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import SetHome from './components/SetHome/SetHome';
+import SetQuestion from './components/SetQuestion/SetQuestion';
 
 function App() {
   const pathname = window.location.pathname;
@@ -16,7 +17,7 @@ function App() {
         <div className='App'>
           <Navbar />
           
-          SET QUESTIONS
+          <SetQuestion setNumber={Number(setQuestion)} />
         </div>
       );
       
@@ -38,7 +39,7 @@ function App() {
     
             <div className="row">
               <div className="col">
-                <SetHome setNumber={3} theme={"Objects"} />
+                <SetHome setNumber={3} theme={"Interaction Betweeen Sims"} />
               </div>
               <div className="col">
                 <SetHome setNumber={4} theme={"Objects"} />
