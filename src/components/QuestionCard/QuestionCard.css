@@ -1,0 +1,14 @@
+.completed {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+.uncompleted {
+    border: 5px solid #1500B3;
+    border-radius: 10px;
+}
+
+.img-border {
+    border: 2px solid #1500B3;
+    border-radius: 10px;
+}
