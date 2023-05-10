@@ -16,7 +16,7 @@ function QuestionCard({ imgURL, question, questionNumber, answers, partialCode, 
     }
 
     return (
-        <div className={`card m-5 ${getSet || getSet === "false" ? "completed" : "uncompleted"}`}>
+        <div className={`card m-5 ${getSet || getSet === "true" ? "completed" : "uncompleted"}`}>
             <div className="mt-3">
                 <img src={plumbob} alt="plumbob icon" width={50} />
             </div>
@@ -59,7 +59,7 @@ function QuestionCard({ imgURL, question, questionNumber, answers, partialCode, 
             <div className="container text-center my-3">
                 <button type="button" className="btn btn-dark btn-lg mx-4" onClick={checkAnswer}>ENTER</button>
                 
-                {getSet || getSet === "false"
+                {getSet || getSet === "true"
                 ?
                 <span>Get Code: {partialCode}</span>
                 : <span>Get Code: _</span>

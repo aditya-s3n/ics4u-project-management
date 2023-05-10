@@ -30,19 +30,19 @@ function App() {
           <div className="container text-center my-2">
             <div className="row">
               <div className="col">
-                <SetHome setNumber={1} theme={"Objects"} />
+                <SetHome setNumber={1} theme={"Objects"} code={"NPCS"} />
               </div>
               <div className="col">
-              <SetHome setNumber={2} theme={"Objects"} />
+              <SetHome setNumber={2} theme={"Objects"} code={"NPCS"} />
               </div>
             </div>
     
             <div className="row">
               <div className="col">
-                <SetHome setNumber={3} theme={"Interaction Betweeen Sims"} />
+                <SetHome setNumber={3} theme={"Interaction Betweeen Sims"} code={"NPCS"} />
               </div>
               <div className="col">
-                <SetHome setNumber={4} theme={"Objects"} />
+                <SetHome setNumber={4} theme={"Objects"}  code={"NPCS"}/>
               </div>
             </div>
           </div>
