@@ -28,7 +28,7 @@ function QuestionCard({ imgURL, question, questionNumber, answers, partialCode, 
                         <p className="fs-3">{question}</p>
                     </div>
                     <div className="col">
-                        <img src={imgURL} alt="question-img" className="img-border"/>
+                        <img src={imgURL} alt="question-img" className="img-border" width="100%"/>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@ function QuestionCard({ imgURL, question, questionNumber, answers, partialCode, 
                                 className="form-check-input" 
                                 type="radio" 
                                 name="flexRadioDefault" 
-                                id={`flexRadioDefault${index}}`} 
+                                id={`flexRadioDefault${index}-${questionNumber}`} 
                                 value={index.toString()}
                                 onChange={(e) => setRadioValue(e.target.value)} 
                             />
-                            <label className="form-check-label fw-bold" htmlFor={`flexRadioDefault${index}}`}>
+                            <label className="form-check-label fw-bold" htmlFor={`flexRadioDefault${index}-${questionNumber}`}>
                                 {answer.questionAnswer}
                             </label>
                             <p className="form-check-label">

@@ -1,10 +1,10 @@
 
 
-function SetHome({ setNumber, theme, code }: { setNumber: Number, theme: String, code: String }) {
-    const getQ1 = localStorage.getItem(`set${setNumber}-q1`);
-    const getQ2 = localStorage.getItem(`set${setNumber}-q2`);
-    const getQ3 = localStorage.getItem(`set${setNumber}-q3`);
-    const getQ4 = localStorage.getItem(`set${setNumber}-q4`);
+function SetHome({ setNumber, theme, code }: { setNumber: number, theme: String, code: String }) {
+    const getQ1 = localStorage.getItem(`set${setNumber}-q${((setNumber - 1) * 4) + 1}`);
+    const getQ2 = localStorage.getItem(`set${setNumber}-q${((setNumber - 1) * 4) + 2}`);
+    const getQ3 = localStorage.getItem(`set${setNumber}-q${((setNumber - 1) * 4) + 3}`);
+    const getQ4 = localStorage.getItem(`set${setNumber}-q${((setNumber - 1) * 4) + 4}`);
 
     return (
         <div className="card m-2">
