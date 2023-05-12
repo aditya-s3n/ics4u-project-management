@@ -36,7 +36,7 @@ function Home() {
           </div>
           <p>
             After finding the codes, input them into the website. You can gain
-            Plumbob stickers and 3D prints for completing all the phases. If 
+            Plumbob stickers for completing all the phases. If 
             you get stuck, feel free to search the questions on the ‎ 
              
              
