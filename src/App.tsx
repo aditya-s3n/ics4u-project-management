@@ -31,10 +31,10 @@ function App() {
           <div className="container text-center my-2">
             <div className="row">
               <div className="col">
-                <SetHome setNumber={1} theme={"Objects"} code={"NPCS"} />
+                <SetHome setNumber={1} theme={"Build Mode Items"} code={"YODA"} />
               </div>
               <div className="col">
-              <SetHome setNumber={2} theme={"Objects"} code={"NPCS"} />
+              <SetHome setNumber={2} theme={"Lore/History"} code={"WILL"} />
               </div>
             </div>
     
@@ -43,7 +43,7 @@ function App() {
                 <SetHome setNumber={3} theme={"Interaction Betweeen Sims"} code={"NPCS"} />
               </div>
               <div className="col">
-                <SetHome setNumber={4} theme={"Objects"}  code={"NPCS"}/>
+                <SetHome setNumber={4} theme={"Guess the Sim"}  code={"SIMS"}/>
               </div>
             </div>
           </div>
